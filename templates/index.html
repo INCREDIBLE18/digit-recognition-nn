@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digit Recognizer</title>
+</head>
+<body>
+  <h1>Digit Recognition App</h1>
+  <form method="POST">
+    <label>Enter Image Index (0-1796): </label>
+    <input type="number" name="index" min="0" max="1796" required>
+    <button type="submit">Predict</button>
+  </form>
+
+  {% if prediction is not none %}
+    <h3>Prediction Result</h3>
+    <p><strong>True Value:</strong> {{ true_value }}</p>
+    <p><strong>Predicted Value:</strong> {{ prediction }}</p>
+    <img src="{{ url_for('static', filename='result.png') }}" alt="Digit Image">
+  {% endif %}
+</body>
+</html>

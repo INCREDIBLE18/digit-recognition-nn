@@ -1,0 +1,36 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore model files
+*.pkl
+model/
+
+# Ignore custom image (optional)
+custom_digit.png
+
+# Ignore matplotlib output
+*.png
+static/result.png
+
+# Flask environment files
+.env
+instance/
+
+# Ignore system/IDE files
+.DS_Store
+.vscode/
+.idea/
+
+# Byte-compiled files
+*.egg-info/
+*.egg
+*.log
+*.bak
+*.swp
+*.swo
+
+# ZIP or generated exports
+*.zip
